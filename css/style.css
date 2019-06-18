@@ -41,7 +41,7 @@ footer{
     border-radius: 30px;
 } */
 #image-cropper {
-    width: 150px;
+    width: 160px;
     height: 200px;
     position: relative;
     overflow: hidden;
