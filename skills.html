@@ -12,7 +12,9 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
     <!-- Import style css -->
-    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -32,17 +34,42 @@
             </ul>
         </div>
     </nav>
+    <!-- main intro -->
+    <div class= "container" id="main-body">
+        <canvas id="myChart"></canvas>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'horizontalBar',
+
+                // The data for our dataset
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                    datasets: [{
+                        label: 'My First dataset',
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        data: [0, 10, 5, 2, 20, 30, 45]
+                    }]
+                },
+
+                // Configuration options go here
+                options: options
+            });
+        </script>
+        
+    </div>
+    
     <!-- Footer -->
-    <footer class="page-footer">
-        <div class="footer-copyright">
+    <footer style="font-size: 20px;">
             <div class="container">
             © 2019 Copyright 
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/facebook-logo.png" href="#!">
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/instragram-logo.png" href="#!">
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/github-logo.png" href="#!">
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/linkedin-logo.png" href="#!">
+            <img class="right" id = "social-logo" src= "images/facebook-logo.png" href="#!">
+            <img class="right" id = "social-logo" src= "images/instragram-logo.png" href="#!">
+            <img class="right" id = "social-logo" src= "images/github-logo.png" href="#!">
+            <img class="right" id = "social-logo" src= "images/linkedin-logo.png" href="https://www.linkedin.com/in/megha-bindiganavale/">
             </div>
-        </div>
     </footer>
               
 
