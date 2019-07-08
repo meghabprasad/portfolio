@@ -36,29 +36,106 @@
     </nav>
     <!-- main intro -->
     <div class= "container" id="main-body">
-        <canvas id="myChart"></canvas>
+        
+        <div class="row" style="width: 500px; height: 350px">
+            <div class="col s12">
+        <h2 style="text-align: center">Languages</h2>
+        <canvas id="langChart" style="width:2px;"></canvas>
         <script>
-            var ctx = document.getElementById('myChart').getContext('2d');
+            var ctx = document.getElementById('langChart').getContext('2d');
             var chart = new Chart(ctx, {
                 // The type of chart we want to create
                 type: 'horizontalBar',
 
                 // The data for our dataset
                 data: {
-                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                    labels: ['HTML/CSS', 'JavaScript', 'C', 'Python', 'MATLAB'],
                     datasets: [{
-                        label: 'My First dataset',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        data: [0, 10, 5, 2, 20, 30, 45]
+                        label: 'Language Proficiency',
+                        backgroundColor: '#996888',
+                        borderColor: '#996888',
+                        data: [43, 45, 43, 37, 35]
                     }]
                 },
 
                 // Configuration options go here
-                options: options
+
+                options:{
+                    scales:{
+                        xAxes: [{
+                            ticks: {
+                                min: 0
+                            },
+                            display: false //this will remove all the x-axis grid lines
+                        }]
+                    },
+                    legend:{
+                        display: false
+                    }
+                }
             });
         </script>
+        </div>
+        <!-- <div class="col s6" style="border-left:blanchedalmond">
+            <h2 style="text-align: center">Technologies</h2>
+            <canvas id="techChart"></canvas>
+            <script>
+                var ctx = document.getElementById('techChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                    // The type of chart we want to create
+                    type: 'horizontalBar',
+
+                    // The data for our dataset
+                    data: {
+                        labels: ['Bootstrap/Materialize', 'Node', 'Git', 'Firebase', 'APIs', 'jQuery', 'React', 'MySQL'],
+                        datasets: [{
+                            label: 'Language Proficiency',
+                            backgroundColor: '#996888',
+                            borderColor: '#996888',
+                            data: [43, 45, 43, 37, 35, 45, 20, 20]
+                        }]
+                    },
+
+                    // Configuration options go here
+
+                    options: {
+                        scales: {
+                            xAxes: [{
+                                ticks: {
+                                    min: 0
+                                },
+                                display: false //this will remove all the x-axis grid lines
+                            }]
+                        },
+                        legend: {
+                            display: false
+                        }
+                    }
+                });
+            </script>
+
+        </div> -->
         
+        </div>
+        <div class="row">
+            <h2 style="text-align: center">Technologies</h2>
+            <div class="col s12" id="tech-logos">
+                <img src="images/Prado Museum Tix.png" style="width: 150px;height: 150px; margin-right: 10px; margin-bottom: 20px;">
+                <img src="images/materialize-logo.png" style="width: 150px;height: 150px; margin-right: 10px;">
+                <img src="images/node-logo.png" style="width: 150px;height: 150px; margin-right: 10px;">
+                <img src="images/git-logo.png" style="width: 150px;height: 150px; margin-right: 10px;">
+                <img src="images/firebase-logo.png" style="width: 100px;height: 150px; margin-right: 10px;">
+                <img src="images/api-logo.png" style="width: 200px;height: 150px; margin-right: 10px;">
+            </div>
+            <br><br>
+            <div class="col s12" id = "tech-logos">
+                <img src="images/jquery-logo.png" style="width: 200px;height: 100px">
+                <img src="images/ajax-logo.png.png" style="width: 150px;height: 100px">
+                <img src="images/react-logo.png" style="width: 150px;height: 150px">
+            </div>
+            
+            
+        </div>
     </div>
     
     <!-- Footer -->

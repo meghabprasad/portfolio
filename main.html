@@ -9,11 +9,14 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Source+Code+Pro&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
     <!-- Import style css -->
     <link rel="stylesheet" href="css/style.css">
     <!--Let browser know website is optimized for mobile-->
+
+    <script src="anime-master/lib/anime.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
@@ -36,7 +39,20 @@
     <div class= "container" id="main-body">
         <br><br>
         <p style="font-size: 20px;">Hi, my name is</p>
-        <h1 style="font-size: 80px;">Megha Bindiganavale</h1>
+        <h1 class="tracking-in-expand" style="font-family: 'Source Code Pro'">Megha Bindiganavale</h1>
+              <script>
+                  const svgPath = document.querySelectorAll('.path');
+
+                    const svgText = anime({
+                    targets: svgPath,
+                    loop: true,
+                    direction: 'alternate',
+                    strokeDashoffset: [anime.setDashoffset, 0],
+                    easing: 'easeInOutSine',
+                    duration: 700,
+                    delay: (el, i) => { return i * 500 }
+                    });
+              </script>
         <p style="font-size: 20px;">I'm a Software Engineer based in San Francisco, Bay Area. I am passionate about learning, teaching, and building exceptional products.</p>
         <br><br><br>
         <a class="waves-effect waves-light btn-large" id="contact-button" href="contact.html">Get in touch</a>

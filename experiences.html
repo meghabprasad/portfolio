@@ -12,7 +12,7 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
     <!-- Import style css -->
-    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -32,18 +32,78 @@
             </ul>
         </div>
     </nav>
-    <!-- Footer -->
-    <footer class="page-footer">
-        <div class="footer-copyright">
-            <div class="container">
-            © 2019 Copyright 
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/facebook-logo.png" href="#!">
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/instragram-logo.png" href="#!">
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/github-logo.png" href="#!">
-            <img class="grey-text text-lighten-4 right" id = "social-logo" src= "images/linkedin-logo.png" href="#!">
-            </div>
+    <br>
+    <div class="container">
+    <div class="row" id="school" style="color: #ECE2D0;">
+      <div class="col s3">
+        <img src="images/stanford-logo.png" style="width: 200px; height: 250px">
+      </div>
+      <div class="col s9">
+        <h4>Stanford University</h4>
+        <p>Software Research Assistant, <i>Since June 2018</i></p>
+        <p>Palo Alto, CA</p>
+        <p>Configure and validate the RETeval diagnostic device to retrieve pupil diameter measurements in addition to the currently recorded retinal responses.</p>
+        <p>Use Lua for programming various flash protocols in the device. Utilize RFF extractor for data extraction and MATLAB/R for data cleansing and analysis. Use MATLAB for image segmentation of the pupil. Use Excel and PowerPoint for data presentation.</p>
+        <p>Presented research developments at national conferences and obtained manuscript co-authorship.</p>
+        <!-- <embed src="images/ARVO_Posterfinal.pdf" type="application/pdf" style="width: 200px; height:200px"/> -->
+        <img id="myImg" src="images/ARVO-img.jpg" alt="Abstract Poster" style="width:100%;max-width:300px">
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
-    </footer>
+        
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+        </script>
+
+      </div>
+    </div>
+    <div class="row" id="school" style="color: #ECE2D0">
+      <div class="col s3">
+        <img src="images/web-logo.png" style="width: 200px; height: 200px;margin-right: 60px">
+      </div>
+      <div class="col s9">
+        <h4>Freelance Web Developer</h4>
+        <p><i>Since January 2019</i></p>
+        <p>San Francisco, CA</p>
+        <p>Develop web applications for clients in the health professional industry. Projects include portfolios, business, and nonprofit websites.</p>
+        <p>Complete several projects within a week using Wix, WordPress, and GoDaddy. Use HTML, CSS, JavaScript to build basic portfolio web applications.</p>
+      </div>
+    </div>
+    </div>
+    <!-- Footer -->
+  <footer style="font-size: 20px;">
+    <div class="container">
+      © 2019 Copyright
+      <img class="right" id="social-logo" src="images/facebook-logo.png" href="#!">
+      <img class="right" id="social-logo" src="images/instragram-logo.png" href="#!">
+      <img class="right" id="social-logo" src="images/github-logo.png" href="#!">
+      <img class="right" id="social-logo" src="images/linkedin-logo.png"
+        href="https://www.linkedin.com/in/megha-bindiganavale/">
+    </div>
+  </footer>
               
 
     <!--JavaScript at end of body for optimized loading-->
