@@ -5,31 +5,46 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-color: #23001e
+    background-color: white
 }
+
 nav{
-    background-color: #E78F8E
+    background-color: white;
+}
+.nav-text{
+  color: black !important;
 }
 #nav-mobile{
     margin-right: 40px;
-    color: #ECE2D0 !important;
+    color:black  !important;
 }
 .brand-logo{
     margin-left: 40px;
-    color: #ECE2D0 !important;
+    color: #996888 !important;
 }
 #social-logo{
     width: 30px;
     height: 30px;;
 }
 #main-body{
-    color: #ECE2D0;
+    color: black;
     flex: 1;
     padding: 20px;
 }
+.card{
+  width: 400px;
+  margin-right: 20px;
+}
+
+.card-content{
+  padding: 40px !important;
+}
+
 footer{
-    color: #ECE2D0;
-    background-color: #E78F8E;
+    border-top: black !important;
+    font-size: 15px !important;
+    color: white;
+    background-color:black;
     padding: 20px;
 }
 #contact-button{
@@ -52,12 +67,9 @@ footer{
 #profile-photo {
     display: inline;
     margin: 0 auto;
-    margin-left: -25%; 
-    height: 100%;
-    width: auto;
 }
 #main-body-about{
-    color: #ECE2D0;
+    color: black;
     flex: 1;
     padding: 20px;
     text-align: center;
@@ -103,8 +115,14 @@ footer{
     align-items: center;
     justify-content: center;
 }
-#projects{
+/* #projects{
     display: flex;
+} */
+#project-title{
+  font-size: 20px;
+}
+#project-tech{
+  color: #944a7a
 }
 ul.a{
     list-style-type: square;
